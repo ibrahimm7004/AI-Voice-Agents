@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red1: #960606ff;
+  --smoky-black1: #0a0000ff;
+  --black1: #000000ff;
+  --orange1: #b91210ff;
+  --yellow1: #fdc817;
+  --redaccent-light: #f20c0c;
+}
+
+.w-single3 {
+  width: calc((100% - 4rem) / 3);
+}
+
+.w-double {
+  width: calc((((100% - 4rem) / 3) * 2) + 2rem);
+}
+
+.w-half {
+  width: calc((100% - 2rem) / 2);
+}

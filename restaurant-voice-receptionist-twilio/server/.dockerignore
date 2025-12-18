@@ -1,0 +1,4 @@
+node_modules
+responseAudio/*
+npm-debug.log
+.DS_Store

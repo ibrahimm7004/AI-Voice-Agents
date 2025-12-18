@@ -1,0 +1,25 @@
+{
+  "name": "deploy",
+  "description": "Deploy Scripts",
+  "scripts": {
+    "lint": "cd client && npm run lint",
+    "build": "cd client && npm run build",
+    "export-env": "node setEnv.js",
+    "check-env": "node checkClientEnv.js",
+    "deploy": "npm run deploy-client && npm run deploy-server",
+    "deploy-client": "node checkClientEnv.js && npm run lint && npm run build && firebase deploy --only hosting",
+    "deploy-server": " cd server && npm run deploy"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.3.1",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "private": true
+}

@@ -1,0 +1,19 @@
+{
+  "name": "B's Hot Chicken",
+  "websiteLink": "https://www.hotchickenllc.com/?fbclid=PAZXh0bgNhZW0CMTEAAaarIFLV1IX2NLNNCKmzA-ogTa23ocWuXvgyrluC4RDyyTLMDo1e2U7Z4_s_aem_HIWHwiLfamyn1AYMwvdp8A",
+  "mapsLink": "https://maps.app.goo.gl/GuWQVb6NCRs1DvtA9",
+  "emailLink": "(253) 882 - 4169",
+  "dietaryMenuLink": "https://www.hotchickenllc.com/menu.html",
+  "placeId": "ChIJTx6qfUerkVQRwsVRRX7sKIM",
+  "operatingHours": [
+    "Monday: 11:00 AM – 11:00 PM",
+    "Tuesday: 11:00 AM – 11:00 PM",
+    "Wednesday: 11:00 AM – 11:00 PM",
+    "Thursday: 11:00 AM – 11:00 PM",
+    "Friday: 11:00 AM – 11:00 PM",
+    "Saturday: 11:00 AM – 11:00 PM",
+    "Sunday: 11:00 AM – 11:00 PM"
+  ],
+  "parkingOptions": "Free Parking Lot, Free Street Parking",
+  "accessibilityOptions": "Wheelchair Accessible Parking, Wheelchair Accessible Entrance, Wheelchair Accessible Restroom, Wheelchair Accessible Seating"
+}

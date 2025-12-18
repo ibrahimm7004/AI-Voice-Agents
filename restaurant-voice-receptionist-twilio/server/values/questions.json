@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "type": "greeting",
+    "base": "Thank you for calling {{name}}",
+    "tagline": "we now deliver, simply head to hotchickenllc.com or ask me for delivery and I can text you the link. Just so you know, were speaking on a recorded line",
+    "end": "How can I help?",
+    "add_tagline": true,
+    "link": "{{websiteLink}}"
+  },
+  {
+    "id": 2,
+    "type": "reservations",
+    "prompt": "Do you offer reservations?",
+    "label": "Reservations",
+    "response": true
+  },
+  {
+    "id": 3,
+    "type": "reservations",
+    "prompt": "Do you offer private dining?",
+    "label": "Private Dining",
+    "response": false
+  },
+  {
+    "id": 4,
+    "type": "address",
+    "prompt": "What is your address?",
+    "response": "2102 Mildred St W, University Place, Washington 98466"
+  },
+  {
+    "id": 5,
+    "type": "address",
+    "prompts": [
+      "Directions?",
+      "Operating hours?",
+      "Parking?",
+      "Accessibility features?"
+    ],
+    "link": "{{mapsLink}}"
+  },
+  {
+    "id": 6,
+    "type": "pickup",
+    "prompt": "Pickup orders offered?",
+    "response": true,
+    "methods": [
+      {
+        "method": "online",
+        "available": true,
+        "link": "{{websiteLink}}"
+      },
+      {
+        "method": "Forward Call",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "delivery",
+    "prompt": "Delivery orders offered?",
+    "response": true,
+    "methods": [
+      {
+        "method": "online",
+        "available": true,
+        "link": "{{websiteLink}}"
+      },
+      {
+        "method": "Forward Call",
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "catering",
+    "prompt": "Catering orders offered?",
+    "response": true,
+    "methods": [
+      {
+        "method": "online",
+        "available": true,
+        "link": "{{websiteLink}}"
+      },
+      {
+        "method": "email",
+        "available": true,
+        "link": "{{emailLink}}"
+      },
+      {
+        "method": "Forward Call",
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "dietary_accommodations",
+    "prompt": "Accommodate dietary preferences?",
+    "response": true,
+    "link": "{{dietaryMenuLink}}",
+    "methods": [
+      {
+        "method": "vegetarian",
+        "available": true
+      },
+      {
+        "method": "halal",
+        "available": true
+      },
+      {
+        "method": "kosher",
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "other",
+    "prompts": [
+      "Talk to human",
+      "Order issue",
+      "Misc questions",
+      "Unmatched questions"
+    ],
+    "response": "forward call"
+  }
+]
