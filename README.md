@@ -3,9 +3,9 @@
 Production-minded AI agent projects focused on real-time interaction, telephony integration, and practical evaluation workflows.
 This repository contains two independent builds you can run and extend.
 
-![Twilio](https://img.shields.io/badge/Twilio%20Voice-F22F46?style=for-the-badge&logo=twilio&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Realtime](https://img.shields.io/badge/Realtime%20Audio%20%26%20Text-0A7E8C?style=for-the-badge)
+![Twilio](https://img.shields.io/badge/Twilio-Voice-F22F46?logo=twilio&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-API-412991?logo=openai&logoColor=white)
+![Realtime](https://img.shields.io/badge/Realtime-Audio%20%26%20Text-0A7E8C)
 
 ## Projects
 
