@@ -3,9 +3,9 @@
 Production-minded AI agent projects focused on real-time interaction, telephony integration, and practical evaluation workflows.
 This repository contains two independent builds you can run and extend.
 
-![Twilio](https://img.shields.io/badge/Twilio-Voice-F22F46?logo=twilio&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-API-412991?logo=openai&logoColor=white)
-![Realtime](https://img.shields.io/badge/Realtime-Audio%20%26%20Text-0A7E8C)
+![Twilio](https://img.shields.io/badge/Twilio%20Voice-F22F46?style=for-the-badge&logo=twilio&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI%20API-412991?style=for-the-badge&logo=openai&logoColor=white)
+![Realtime](https://img.shields.io/badge/Realtime%20Audio%20%26%20Text-0A7E8C?style=for-the-badge)
 
 ## Projects
 
@@ -14,10 +14,10 @@ This repository contains two independent builds you can run and extend.
 
 ## Projects Overview
 
-| Project | What it is | Primary stack | Folder |
-|---|---|---|---|
-| Restaurant AI Phone Receptionist (Twilio) | Inbound call agent for restaurant operations with live transfer and SMS tooling. | Twilio Voice, Media Streams, OpenAI Realtime, Fastify, Firebase | [`restaurant-voice-receptionist-twilio/`](./restaurant-voice-receptionist-twilio/) |
-| AI Interviewer Voice Agent (OpenAI) | Adaptive interview agent that changes questions based on responses and parameters. | OpenAI Assistants API, FastAPI, Python, Jinja2 | [`ai-interview-agent-openai/`](./ai-interview-agent-openai/) |
+| Project                                   | What it is                                                                         | Primary stack                                                   | Folder                                                                             |
+| ----------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Restaurant AI Phone Receptionist (Twilio) | Inbound call agent for restaurant operations with live transfer and SMS tooling.   | Twilio Voice, Media Streams, OpenAI Realtime, Fastify, Firebase | [`restaurant-voice-receptionist-twilio/`](./restaurant-voice-receptionist-twilio/) |
+| AI Interviewer Voice Agent (OpenAI)       | Adaptive interview agent that changes questions based on responses and parameters. | OpenAI Assistants API, FastAPI, Python, Jinja2                  | [`ai-interview-agent-openai/`](./ai-interview-agent-openai/)                       |
 
 ## Restaurant AI Phone Receptionist (Twilio)
 
