@@ -1,88 +1,78 @@
-# Restaurant AI Phone Receptionist
+# AI Voice Agents
 
-Production AI voice receptionist handling real inbound phone calls with low latency, live transfers, SMS follow-ups, and call analytics.
+Production-minded AI agent projects focused on real-time interaction, telephony integration, and practical evaluation workflows.
+This repository contains two independent builds you can run and extend.
 
-![AI Voice Receptionist Flow](./image-1.png)
+![Twilio](https://img.shields.io/badge/Twilio-Voice-F22F46?logo=twilio&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-API-412991?logo=openai&logoColor=white)
+![Realtime](https://img.shields.io/badge/Realtime-Audio%20%26%20Text-0A7E8C)
 
-## Overview
+## Projects
 
-This project implements a **real-time AI phone receptionist** for a restaurant, built on Twilio Media Streams and a streaming Voice AI pipeline. The agent answers incoming calls, handles common customer questions, sends SMS links on demand, and escalates to a human when needed, all with fast, natural turn-taking.
+- [Restaurant AI Phone Receptionist (Twilio)](#restaurant-ai-phone-receptionist-twilio)
+- [AI Interviewer Voice Agent (OpenAI)](#ai-interviewer-voice-agent-openai)
 
-This system is deployed and actively used by a real business.
+## Projects Overview
 
-## Architecture (High Level)
+| Project | What it is | Primary stack | Folder |
+|---|---|---|---|
+| Restaurant AI Phone Receptionist (Twilio) | Inbound call agent for restaurant operations with live transfer and SMS tooling. | Twilio Voice, Media Streams, OpenAI Realtime, Fastify, Firebase | [`restaurant-voice-receptionist-twilio/`](./restaurant-voice-receptionist-twilio/) |
+| AI Interviewer Voice Agent (OpenAI) | Adaptive interview agent that changes questions based on responses and parameters. | OpenAI Assistants API, FastAPI, Python, Jinja2 | [`ai-interview-agent-openai/`](./ai-interview-agent-openai/) |
 
-- **Telephony:** Twilio Voice + Media Streams
-- **Voice AI:** Realtime speech-to-speech Voice AI API (low latency, barge-in support)
-- **Backend:** Node.js + Fastify + WebSockets
-- **Messaging:** Twilio SMS
-- **Analytics & Admin:** Firebase Auth + Firestore + React dashboard
-- **Deployment:** Docker + Google Cloud Run, Firebase Hosting
+## Restaurant AI Phone Receptionist (Twilio)
 
-## System Flow
+![Restaurant Twilio Voice Receptionist Workflow](./repo-assets/image-1.png)
 
-1. Caller dials the restaurant phone number.
-2. Twilio streams live audio to the backend over WebSockets.
-3. Audio is processed in real time by the Voice AI API.
-4. The agent responds with streaming speech output.
-5. The agent can:
+### 5-second rundown
 
-   - Answer questions
-   - Send SMS links (menu, website, directions)
-   - Forward the call to a human
+- Handles real inbound restaurant calls with low-latency AI responses.
+- Streams call audio through Twilio Media Streams and WebSockets.
+- Supports interruption (barge-in), FAQ handling, and menu/location/hours queries.
+- Sends SMS follow-ups (links and details) during calls when requested.
+- Escalates to live staff and stores call logs for QA and analytics.
 
-6. Call transcripts and metadata are saved for analytics and QA.
+### Tech stack
 
-## Live Demo
+- Twilio Voice, Twilio Media Streams, Twilio SMS
+- OpenAI Realtime API (`gpt-4o-realtime-preview`)
+- Node.js, Fastify, `@fastify/websocket`, `ws`
+- Firebase Auth, Firestore, React/Vite admin tooling
+- Docker, Google Cloud Run, Firebase Hosting
 
-- **Live phone demo:** +1 (253) 523-3245
-  Calls are answered by the AI receptionist.
+Where to look next: [`restaurant-voice-receptionist-twilio/README.md`](./restaurant-voice-receptionist-twilio/README.md)
 
-## Admin Portal
+## AI Interviewer Voice Agent (OpenAI)
 
-- **QA & analytics dashboard:**
-  [http://banded-arch-441723-g6.web.app/qa](http://banded-arch-441723-g6.web.app/qa)
+![AI Interviewer Workflow](./repo-assets/image-2.jpg)
 
-The admin portal allows staff to:
+### 5-second rundown
 
-- Edit question and answer content
-- Review call analytics
-- Inspect call topics and trends
+- Runs dynamic interviews that adapt follow-up questions in real time.
+- Uses user-defined parameters to shape role focus and interview direction.
+- Delivers an interactive text-based interview flow (no video required).
+- Adjusts question difficulty based on candidate responses.
+- Continues evaluation-oriented questioning as answers evolve.
 
-## Real Client Website
+### Tech stack
 
-- **Business website:**
-  [https://bshotchicken.com](https://bshotchicken.com)
+- OpenAI Assistants API
+- Python, FastAPI, Uvicorn
+- Jinja2 templates, HTML/CSS frontend
+- `python-dotenv`, `requests`
+- Heroku deployment target (plus Docker/Procfile support in repo)
 
-This demonstrates the system is part of a real production setup, not a demo.
+Live app: [AI Interviewer Web App](https://ai-interviewer-general-bef2faaaa006.herokuapp.com/)
 
-## Repository Structure (Simplified)
+Where to look next: [`ai-interview-agent-openai/README.md`](./ai-interview-agent-openai/README.md)
 
-- `server/` – Fastify server, WebSocket handling, Twilio webhooks
-- `realtime/` – Voice streaming and agent session logic
-- `tools/` – Call forwarding and SMS tool functions
-- `analytics/` – Post-call processing and Firestore persistence
-- `admin/` – React + Firebase admin dashboard
-- `docker/` – Container and deployment configs
+## Repo Notes
 
-## Key Features
+### Who this repo is for
 
-- Real-time speech-to-speech voice agent
-- Low latency with interruption (barge-in) support
-- Live call forwarding to human staff
-- SMS follow-ups during calls
-- Call transcripts and topic analytics
-- Editable QA content via admin dashboard
+- Teams building production-oriented AI reception or interviewing agents.
+- Developers evaluating telephony workflows, real-time interaction, and adaptive interview logic.
 
-## Use Cases
+### How to run
 
-- Restaurant phone reception
-- Appointment or reservation intake
-- High-volume inbound call automation
-- Customer support voice agents
-
-## Notes
-
-- Secrets and credentials are handled via environment variables.
-- This repository is structured for real deployment, not toy demos.
-- Sensitive keys and production credentials are intentionally excluded.
+Each project is self-contained and has its own setup instructions.
+Use the project READMEs in `restaurant-voice-receptionist-twilio/` and `ai-interview-agent-openai/`.
