@@ -23,7 +23,7 @@ This repository contains two independent builds you can run and extend.
 
 ![Restaurant Twilio Voice Receptionist Workflow](./repo-assets/image-1.png)
 
-### 5-second rundown
+### Quick Breakdown
 
 - Handles real inbound restaurant calls with low-latency AI responses.
 - Streams call audio through Twilio Media Streams and WebSockets.
@@ -41,11 +41,17 @@ This repository contains two independent builds you can run and extend.
 
 Where to look next: [`restaurant-voice-receptionist-twilio/README.md`](./restaurant-voice-receptionist-twilio/README.md)
 
+<br/>
+
+---
+
+<br/>
+
 ## AI Interviewer Voice Agent (OpenAI)
 
 ![AI Interviewer Workflow](./repo-assets/image-2.jpg)
 
-### 5-second rundown
+### Quick Breakdown
 
 - Runs dynamic interviews that adapt follow-up questions in real time.
 - Uses user-defined parameters to shape role focus and interview direction.
